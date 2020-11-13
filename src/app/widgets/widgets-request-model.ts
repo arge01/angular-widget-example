@@ -79,7 +79,7 @@ export class WidgetRequest {
 
     widgetArticles()
     {
-        return this.http.get<NewsApi>(`https://newsapi.org/v2/everything?domains=${this.settings.domains()}&apiKey=b2dc3486f3d34230835d5339b8cd23ad`);
+        return this.http.get<NewsApi>(`https://newsapi.org/v2/everything?domains=${this.settings.domains()}&apiKey=bc254e4729544151b9310d64cb7056eb`);
     }
 
     bourseWidgets()

@@ -9,7 +9,7 @@ export class ApiSettings {
 
     instagramSeettings()
     {
-        this.token = "8288129000.1677ed0.add33334f54c44f5af621f9fcb7e668a";
+        this.token = "bc254e4729544151b9310d64cb7056eb";
         this.count = 5;
         return {'token': this.token, 'count': this.count};
     }
