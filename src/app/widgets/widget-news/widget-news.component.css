@@ -37,14 +37,16 @@
 }
 .news .title {
     height: auto;
-    overflow: hidden;
     margin-bottom: 5px;
     padding: 15px 30px;
     font-size: 10pt;
     font-weight: 300;
     z-index: 10000;
     position: relative;
-    max-height: 100px;
+    max-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 @media screen and (max-width: 1024px) {
     .news .title {max-height: unset}
