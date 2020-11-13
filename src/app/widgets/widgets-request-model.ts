@@ -79,7 +79,7 @@ export class WidgetRequest {
 
     widgetArticles()
     {
-        const url: string = "https://newsapi.org/v2/top-headlines?country=tr&apiKey=8b869ec3eec745c99e0442c5abf60ccf";
+        const url: string = "https://newsapi.org/v2/top-headlines?country=tr&apiKey=bc254e4729544151b9310d64cb7056eb";
         //const url: string = `https://newsapi.org/v2/everything?domains=${this.settings.domains()}&apiKey=bc254e4729544151b9310d64cb7056eb`;
         return this.http.get<NewsApi>(url);
     }
