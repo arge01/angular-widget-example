@@ -177,6 +177,9 @@ export class WeatherCodes {
 
 export class DailyWeather extends WeekDays {
 
+    /*
+    return void
+    */
     private weather_model: WeatherModel;
 
     constructor(){ super(); }
