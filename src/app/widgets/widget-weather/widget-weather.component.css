@@ -1,0 +1,114 @@
+.weather-box {
+    background: #f1f1f1;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 5px;
+    min-height: 129px
+}
+.weather-country h3,
+.weather-country h4,
+.weather-country span,
+.weather-country i {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    color: #8a8a8a;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+}
+.weather-country span {position: absolute; width: 200%; bottom: -5px;}
+.weather-country i {
+    font-weight: 300;
+    color: #7a7a7a;
+    font-family: 'Inconsolata', monospace;
+}
+.weather-country h3.title {
+    font-weight: 700;
+    font-size: 2em;
+}
+.weather-country,
+.weather-display {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.weather-title > span {
+    display: flex;
+    color: #636363;
+    align-items: flex-start;
+}
+.weather-title > span i {
+    font-style: normal;
+    font-size: 15pt;
+    font-weight: 300;
+    margin-top: -20px;
+    margin-left: 5px;
+}
+.weather-title span.text {
+    font-size: 5em;
+    font-weight: 700;
+    position: relative;
+    line-height: 100%;
+}
+.weather-title span.image {
+    height: 55px;
+    width: 55px;
+    box-sizing: border-box;
+    /* filter: opacity(0.3); */
+    margin-right: 5px;
+}
+:host /deep/ .weather-title span.image svg {height: 55px;width: 55px;}
+.weather-container ul {list-style-type: none;margin: 0;width: 100%;display: flex;padding: 0 15px;justify-content: space-between;margin-top: 5px;}
+.weather-container ul li {display: list-item;padding: 0;}
+.weather-container ul li b,
+.weather-container ul li span {color: #8a8a8a;font-size: 11pt;}
+.weather-container ul li b {margin-right: 3px;}
+ul.weather-days {list-style-type: none;width: 100%;height: auto;flex: 1 1 100%;padding-left: 15px;padding-right: 15px;margin-bottom: 12px;margin-top: 2px;}
+ul.weather-days li {flex: 1 1 100%}
+ul.weather-days li a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #828282;
+    border: none;
+    transition: all .2s ease-in-out;
+    padding: 0;
+    text-align: center;
+    background: #f9f9f9;
+}
+ul.weather-days li:hover a {text-decoration: none;border: none;background: #efefef;border: none;}
+ul.weather-days li.active a {text-decoration: none;border: none;background: #efefef;}
+ul.weather-days li .day {
+    font-size: 9pt;
+    width: 100%;
+    padding: 10px;
+}
+ul.weather-days li .image {filter: opacity(0.5);width: 100%;height: 100%;text-align: center;}
+:host /deep/ ul.weather-days li .image svg {width: 30px;height: 30px;}
+ul.weather-days li .text {
+    font-size: 10pt;
+    width: 100%;
+}
+ul.weather-days li .text span {padding: 10px;}
+ul.weather-days li .text span.am {
+    background: rgb(199, 249, 146);
+    color: #ffffff;
+}
+ul.weather-days li .text span.pm {
+    background: rgba(0,0,0,.4);
+    color: #ffffff;
+}
+ul.weather-days li .text span i {
+    font-size: 7pt;
+    font-style: normal;
+    position: relative;
+    top: -5px;
+}
+ul.weather-days li a span,
+ul.weather-days li a .image,
+ul.weather-days li a .text {
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: stretch;
+    padding: 5px;
+}
+ul.weather-days li a .text {justify-content: flex-end;margin: -5px;}

@@ -1,0 +1,33 @@
+ <div class="d-flex flex-wrap weather-box">
+    <div class="weather-country col-6">
+        <h3 class="title">{{city}}</h3>
+        <h4 class="title">{{day.long}}</h4>
+        <span class="title">{{condition}}</span>
+    </div>
+    <div class="weather-display col-6">
+        <div class="weather-title d-flex flex-nowrap justify-content-end align-items-center">
+            <span title="{{icontitle}}" class="image" [innerHTML]="sanitizer.bypassSecurityTrustHtml(icon)"></span>
+            <span class="text">{{temapature}} <i>&#8451;</i></span>
+        </div>
+    </div>
+</div>
+<!-- end weather country  -->
+<div class="weather-container d-flex flex-wrap">
+    <ul>
+        <li><b>Yağış: </b><span>{{chill}}%</span></li>
+        <li><b>Nem: </b><span>{{direction}}%</span></li>
+        <li><b>Rüzgar: </b><span>{{speed}} km/s</span></li>
+    </ul>
+</div>
+<!-- end weather-container -->
+<ul class="weather-days d-flex flex-wrap">
+    <li *ngFor="let item of forecasts; let i = index">
+        <a *ngIf="i < 7">
+            <span class="day">{{DailyWeather.getDay(item.day, true)}}</span>
+            <div title="{{item.text}}" class="image" [innerHTML]="sanitizer.bypassSecurityTrustHtml(DailyWeather.getIcon(item.code))">
+            </div>
+            <div class="text"><span class="am">{{DailyWeather.getHigh(item.high)}} <i>&#8451;</i></span><span class="pm">{{DailyWeather.getLow(item.low)}}<i>&#8451;</i></span></div>
+        </a>
+    </li>
+</ul>
+<!-- end weather-days -->

@@ -1,0 +1,118 @@
+#weather,
+#bourse,
+#news,
+#twitter-widget,
+#facebook-widget,
+#instagram-widget {
+    box-sizing: border-box;
+    height: auto;
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative
+}
+.widget {
+    width: 100%;
+    height: 458px;
+    padding-left: 0;
+    padding-right: 0;
+    background: rgb(255, 255, 255);
+    -webkit-box-shadow: 3px 3px 4px -1px rgba(0,0,0,.1);
+    -moz-box-shadow: 3px 3px 4px -1px rgba(0,0,0,.1);
+    box-shadow: 3px 3px 4px -1px rgba(0,0,0,.1);
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: 'Montserrat', sans-serif;
+    /*border-radius: 15px;*/
+}
+/* 
+ * scrool
+*/
+.widget::-webkit-scrollbar {
+  width: 5px;
+}
+.widget::-webkit-scrollbar-track {
+  background: #e8e8e8; 
+}
+.widget::-webkit-scrollbar-thumb {
+  background: #969696; 
+}
+.widget::-webkit-scrollbar-thumb:hover {
+  background: #909090; 
+}
+.widget-header-title {
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+  background: #f1f1f1;
+  color: #969696;
+  font-size: 1.2em;
+  margin: 0;
+  position: sticky;
+  z-index: 10000000000;
+  top: 0;
+  height: 44px;
+}
+.has-header-widget-44 {height: 414px;}
+.has-header-widget-40 {height: 410px;}
+
+@media screen and (max-width: 1200px) {
+  .widget,
+  .has-header-widget-44,
+  .has-header-widget-40 {height: auto; overflow: hidden}
+}
+
+.widget-header-title.facebook {
+  border-bottom: 1px solid #eaeaea;
+  background: #3a559f;
+  color: #fff;
+  font-size: .8em;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10000000000;
+  top: 0;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  text-transform: uppercase
+}
+.widget-header-title.facebook svg {width: 20px; height: auto;background: #fff;border: 1px solid #fff; margin-right: 5px}
+
+.widget-header-title.instagram {
+  border-bottom: 1px solid #eaeaea;
+  background: #c536a4;
+  color: #fff;
+  font-size: .8em;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10000000000;
+  top: 0;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  text-transform: uppercase
+}
+.widget-header-title.instagram svg {width: 20px; height: auto;background: #fff;border: 1px solid #fff; margin-right: 5px}
+
+.widget-header-title.twitter {
+  border-bottom: 1px solid #eaeaea;
+  background: #50abf1;
+  color: #fff;
+  font-size: .8em;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10000000000;
+  top: 0;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  text-transform: uppercase
+}
+.widget-header-title.twitter svg {width: 20px; height: auto;background: #fff;border: 1px solid #fff; margin-right: 5px}
