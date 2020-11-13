@@ -29,7 +29,7 @@ export class WidgetWeatherComponent implements OnInit {
   public icontitle: any;
 
   /*
-  * return days
+  * return day
   */
   public DailyWeather: DailyWeather;
 
