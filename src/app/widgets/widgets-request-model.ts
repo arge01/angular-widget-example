@@ -79,7 +79,9 @@ export class WidgetRequest {
 
     widgetArticles()
     {
-        return this.http.get<NewsApi>(`https://newsapi.org/v2/everything?domains=${this.settings.domains()}&apiKey=bc254e4729544151b9310d64cb7056eb`);
+        const url: string = "https://newsapi.org/v2/top-headlines?country=tr&apiKey=bc254e4729544151b9310d64cb7056eb";
+        //const url: string = `https://newsapi.org/v2/everything?domains=${this.settings.domains()}&apiKey=bc254e4729544151b9310d64cb7056eb`;
+        return this.http.get<NewsApi>(url);
     }
 
     bourseWidgets()
