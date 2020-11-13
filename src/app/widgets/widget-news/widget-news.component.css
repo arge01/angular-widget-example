@@ -49,7 +49,10 @@
     text-overflow: ellipsis;
 }
 @media screen and (max-width: 1024px) {
-    .news .title {max-height: unset}
+    .news .title {
+        max-height: unset;
+        white-space: normal;
+    }
 }
 .news .link {
     background: #f1f1f1;
