@@ -11,27 +11,27 @@ import { WidgetRequest } from '../widgets-request-model';
 })
 export class WidgetWeatherComponent implements OnInit {
 
-  private weather_model: WeatherModel;
+  public weather_model: WeatherModel;
   /*
   * get texts
   */
-  private icon: any;
-  private city: string;
-  private condition: any;
-  private day: any;
-  private small_icon: any;
-  private temapature: number;
-  private chill: number;
-  private direction: number;
-  private speed: number;
-  private forecasts: any;
-  private current_observation: any;
-  private icontitle: any;
+  public icon: any;
+  public city: string;
+  public condition: any;
+  public day: any;
+  public small_icon: any;
+  public temapature: number;
+  public chill: number;
+  public direction: number;
+  public speed: number;
+  public forecasts: any;
+  public current_observation: any;
+  public icontitle: any;
 
   /*
   * return days
   */
-  private DailyWeather: DailyWeather;
+  public DailyWeather: DailyWeather;
 
   /*
   * weekdays
@@ -50,7 +50,7 @@ export class WidgetWeatherComponent implements OnInit {
   private data: weatherJson;
 
   constructor(
-    @Inject(DomSanitizer) private readonly sanitizer: DomSanitizer,
+    @Inject(DomSanitizer) public readonly sanitizer: DomSanitizer,
     private widget_request: WidgetRequest
   ) 
   {

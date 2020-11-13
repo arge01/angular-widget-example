@@ -11,7 +11,7 @@ import { NewsApi } from '../../widgets/widget-news/news-model';
 })
 export class InstagramWidgetComponent implements OnInit {
   private response: object;
-  private data: NewsModel[] = [];
+  public data: NewsModel[] = [];
   constructor (private instagram: InstagramServices) {}
 
   ngOnInit () {

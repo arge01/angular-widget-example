@@ -10,7 +10,7 @@ import { element } from 'protractor';
 })
 export class WidgetNewsComponent implements OnInit {
   
-  private data: NewsModel[] = [];
+  public data: NewsModel[] = [];
   constructor(
     private widget_request: WidgetRequest
   ) { }

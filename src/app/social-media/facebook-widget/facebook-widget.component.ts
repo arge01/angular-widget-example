@@ -299,7 +299,7 @@ export class FacebookWidgetComponent implements OnInit {
       }
     ]
   }
-  private data: any[]
+  public data: any[]
   constructor () {}
 
   ngOnInit () {

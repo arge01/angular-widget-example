@@ -533,7 +533,7 @@ export class TwitterWidgetComponent implements OnInit {
       since_id_str: '0'
     }
   }
-  private data: NewsModel[] = [];
+  public data: NewsModel[] = [];
   constructor (private twitter: TwitterServices) {}
 
   ngOnInit () 

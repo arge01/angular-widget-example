@@ -9,7 +9,7 @@ import { WidgetRequest } from '../widgets-request-model';
 })
 
 export class WidgetBourseComponent implements OnInit {
-  private data: BourseModel[] = [];
+  public data: BourseModel[] = [];
   
   constructor(
     private widget_request: WidgetRequest,
